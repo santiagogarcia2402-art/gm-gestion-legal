@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G&M Gestión Legal S.A.S.</title>
+
+    <!-- Fuentes: Cinzel y Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+
+    <!-- 1. NAVBAR -->
+    <nav id="navbar" class="navbar">
+        <div class="container nav-container">
+            <div class="nav-brand">
+                <img src="assets/images/gm-logo.png" alt="G&M Gestión Legal" class="logo-img">
+                <span class="brand-title">G&M Gestión Legal</span>
+            </div>
+
+            <!-- Desktop Nav -->
+            <div class="nav-links">
+                <a href="#inicio" class="nav-link">Inicio</a>
+                <a href="#servicios" class="nav-link">Servicios</a>
+                <a href="#nosotros" class="nav-link">Nosotros</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+                <a href="#contacto" class="btn-primary btn-nav">Solicitar Asesoría</a>
+            </div>
+
+            <!-- Botón Menú Móvil -->
+            <button id="mobile-toggle" class="mobile-toggle" aria-label="Abrir menú">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="4" x2="20" y1="12" y2="12" />
+                    <line x1="4" x2="20" y1="6" y2="6" />
+                    <line x1="4" x2="20" y1="18" y2="18" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Menú Desplegable Móvil -->
+        <div id="mobile-menu" class="mobile-menu">
+            <a href="#inicio" class="mobile-link">Inicio</a>
+            <a href="#servicios" class="mobile-link">Servicios</a>
+            <a href="#nosotros" class="mobile-link">Nosotros</a>
+            <a href="#contacto" class="mobile-link">Contacto</a>
+            <a href="#contacto" class="btn-primary mobile-btn">Solicitar Asesoría</a>
+        </div>
+    </nav>
+
+    <!-- 2. HERO -->
+    <section id="inicio" class="hero-section">
+        <div class="container hero-container">
+            <h1 class="hero-title reveal">
+                Cumplimiento Legal<br>
+                Gestión Documental<br>
+                <span class="text-gold">Tranquilidad institucional</span>
+            </h1>
+            <p class="hero-desc reveal delay-1">
+                Asesoría Jurídica y Gestión Documental especializada para entidades
+                Públicas y Privadas, así como para cuerpos de bomberos de Colombia.
+            </p>
+            <div class="hero-actions reveal delay-2">
+                <a href="#contacto" class="btn-primary">Solicitar Asesoría</a>
+                <a href="#servicios" class="btn-outline">Conocer Servicios</a>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m6 9 6 6 6-6" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- 3. QUIÉNES SOMOS -->
+    <section id="nosotros" class="section bg-white">
+        <div class="container">
+            <div class="grid grid-2 items-center gap-16">
+                <div class="reveal">
+                    <span class="section-tag">Nosotros</span>
+                    <h2 class="section-title">Expertos en Fortalecimiento Institucional</h2>
+                    <p class="mb-6 leading-relaxed">
+                        Nuestra labor se rige por principios inquebrantables de
+                        <strong>legalidad, eficiencia, transparencia y control</strong>,
+                        garantizando que su institución cumpla con la normativa vigente y optimice sus procesos
+                        internos.
+                    </p>
+
+                    <div class="card-founder reveal delay-1">
+                        <div class="founder-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="founder-name">Julio César García Triana</h3>
+                            <p class="founder-role">Fundador y Director General</p>
+                            <p class="founder-desc">
+                                Abogado Especialista en Derecho Administrativo con extensa
+                                trayectoria institucional, docente y experiencia directa en el sector público y
+                                bomberil.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="image-wrapper-accent reveal delay-2">
+                    <div class="accent-backdrop"></div>
+                    <img src="assets/images/about-img.png" alt="Gestión Legal Institucional" class="accent-image">
+                </div>
+            </div>
+
+            <!-- Misión & Visión con marcas de agua SVG -->
+            <div class="grid grid-2 gap-8 mt-16">
+                <div class="mission-card reveal delay-1">
+                    <div class="watermark-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                        </svg>
+                    </div>
+                    <h3 class="card-title text-gold">Misión</h3>
+                    <p class="text-light-gray card-text">
+                        Proporcionar asesoría jurídica especializada y soluciones
+                        integrales en gestión documental que fortalezcan la institucionalidad de nuestros clientes,
+                        garantizando el cumplimiento normativo y la eficiencia administrativa con los más altos
+                        estándares de calidad y ética.
+                    </p>
+                </div>
+
+                <div class="vision-card reveal delay-2">
+                    <div class="watermark-icon dark">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="130" height="130" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8" />
+                            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                        </svg>
+                    </div>
+                    <h3 class="card-title text-primary">Visión</h3>
+                    <p class="card-text">
+                        Ser reconocidos a nivel nacional como la firma líder y aliada estratégica por excelencia para el
+                        sector público, privado y cuerpos de bomberos, destacando por nuestro compromiso con la
+                        transparencia, la innovación en la gestión y el fortalecimiento del marco institucional en
+                        Colombia.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. POR QUÉ ELEGIRNOS (ICONOS INTEGRADOS) -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="text-center mb-16 reveal">
+                <span class="section-tag">Nuestra Ventaja</span>
+                <h2 class="section-title">Por Qué Elegir G&M Gestión Legal S.A.S</h2>
+            </div>
+
+            <div class="grid grid-4 gap-8">
+                <!-- 1. Escudo -->
+                <div class="advantage-card reveal delay-1">
+                    <div class="advantage-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+                        </svg>
+                    </div>
+                    <h4>Experiencia en Inspección</h4>
+                    <p>Experiencia directa en inspección, vigilancia y control bomberil.</p>
+                </div>
+
+                <!-- 2. Balanza -->
+                <div class="advantage-card reveal delay-2">
+                    <div class="advantage-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" />
+                            <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" />
+                            <path d="M7 21h10" />
+                            <path d="M12 3v18" />
+                            <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2" />
+                        </svg>
+                    </div>
+                    <h4>Conocimiento Normativo</h4>
+                    <p>Conocimiento práctico y actualizado del marco normativo y administrativo.</p>
+                </div>
+
+                <!-- 3. Usuarios / Acompañamiento -->
+                <div class="advantage-card reveal delay-3">
+                    <div class="advantage-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        </svg>
+                    </div>
+                    <h4>Acompañamiento Cercano</h4>
+                    <p>Asesoría jurídica especializada, personalizada y de proximidad institucional.</p>
+                </div>
+
+                <!-- 4. Edificio / Institución -->
+                <div class="advantage-card reveal delay-4">
+                    <div class="advantage-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="3" x2="21" y1="22" y2="22" />
+                            <line x1="6" x2="6" y1="18" y2="11" />
+                            <line x1="10" x2="10" y1="18" y2="11" />
+                            <line x1="14" x2="14" y1="18" y2="11" />
+                            <line x1="18" x2="18" y1="18" y2="11" />
+                            <polygon points="12 2 20 7 4 7" />
+                        </svg>
+                    </div>
+                    <h4>Liderazgo Docente</h4>
+                    <p>Liderazgo docente y firme compromiso con el fortalecimiento normativo bomberil.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. SERVICIOS -->
+    <section id="servicios" class="section bg-white">
+        <div class="container">
+            <div class="text-center mb-16 reveal">
+                <span class="section-tag">Especialidades</span>
+                <h2 class="section-title">Nuestros Servicios</h2>
+            </div>
+
+            <!-- Gestión Documental -->
+            <div class="services-block mb-20">
+                <div class="block-header reveal">
+                    <div class="service-header-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
+                            <polyline points="14 2 14 8 20 8" />
+                            <line x1="16" x2="8" y1="13" y2="13" />
+                            <line x1="16" x2="8" y1="17" y2="17" />
+                            <line x1="10" x2="8" y1="9" y2="9" />
+                        </svg>
+                    </div>
+                    <h3 class="service-heading">Gestión Documental</h3>
+                </div>
+                <div class="grid grid-2 gap-8">
+                    <div class="service-card reveal delay-1">
+                        <h4>Organización Documental</h4>
+                        <p>Clasificación, ordenamiento y preservación técnica de fondos documentales acumulados.</p>
+                        <ul class="check-list">
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                    <path d="m9 11 3 3L22 4" />
+                                </svg> Tablas de Retención Documental</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                    <path d="m9 11 3 3L22 4" />
+                                </svg> Clasificación de expedientes</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                    <path d="m9 11 3 3L22 4" />
+                                </svg> Preservación a largo plazo</li>
+                        </ul>
+                    </div>
+                    <div class="service-card reveal delay-2">
+                        <h4>Consultoría Archivística</h4>
+                        <p>Servicio especializado de consultoría archivística para la gestión documental.</p>
+                        <ul class="check-list">
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                    <path d="m9 11 3 3L22 4" />
+                                </svg> Capacitación</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                    <path d="m9 11 3 3L22 4" />
+                                </svg> Asesoría</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                    <path d="m9 11 3 3L22 4" />
+                                </svg> Asistencia Técnica</li>
+                        </ul>
+                    </div>
+                    <div class="service-card reveal delay-1">
+                        <h4>Asesoría Normativa</h4>
+                        <p>Desarrollo de Programas de Gestión Documental (PGD) y cumplimiento de lineamientos del AGN.
+                        </p>
+                        <ul class="check-list">
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                    <path d="m9 11 3 3L22 4" />
+                                </svg> Elaboración de PGD</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                    <path d="m9 11 3 3L22 4" />
+                                </svg> Alineación con el Archivo General</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                    <path d="m9 11 3 3L22 4" />
+                                </svg> Auditorías de cumplimiento</li>
+                        </ul>
+                    </div>
+                    <div class="service-card reveal delay-2">
+                        <h4>Apoyo Administrativo</h4>
+                        <p>Soporte integral en la gestión diaria del archivo y flujos de información institucional.</p>
+                        <ul class="check-list">
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                    <path d="m9 11 3 3L22 4" />
+                                </svg> Personal capacitado</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                    <path d="m9 11 3 3L22 4" />
+                                </svg> Optimización de flujos de trabajo</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                    <path d="m9 11 3 3L22 4" />
+                                </svg> Control de correspondencia</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Asesoría Jurídica Especializada -->
+            <div class="services-block">
+                <div class="block-header reveal">
+                    <div class="service-header-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" />
+                            <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" />
+                            <path d="M7 21h10" />
+                            <path d="M12 3v18" />
+                            <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2" />
+                        </svg>
+                    </div>
+                    <h3 class="service-heading">Asesoría Jurídica Especializada</h3>
+                </div>
+                <div class="grid grid-2 gap-8">
+                    <div class="service-card reveal delay-1">
+                        <h4>Asesoría Jurídica</h4>
+                        <p>Consultoría experta en derecho administrativo y cumplimiento normativo para entidades
+                            públicas.</p>
+                        <ul class="check-list">
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                    <path d="m9 11 3 3L22 4" />
+                                </svg> Conceptos jurídicos</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                    <path d="m9 11 3 3L22 4" />
+                                </svg> Revisión de actos administrativos</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                    <path d="m9 11 3 3L22 4" />
+                                </svg> Contratación estatal</li>
+                        </ul>
+                    </div>
+                    <div class="service-card reveal delay-2">
+                        <h4>Capacitación y Formación</h4>
+                        <p>Programas de actualización y formación legal para funcionarios institucionales.</p>
+                        <ul class="check-list">
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                    <path d="m9 11 3 3L22 4" />
+                                </svg> Seminarios normativos</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                    <path d="m9 11 3 3L22 4" />
+                                </svg> Talleres de gestión pública</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                    <path d="m9 11 3 3L22 4" />
+                                </svg> Actualización jurisprudencial</li>
+                        </ul>
+                    </div>
+                    <div class="service-card reveal delay-1">
+                        <h4>Representación y Defensa</h4>
+                        <p>Representación legal técnica en procesos administrativos y sancionatorios.</p>
+                        <ul class="check-list">
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                    <path d="m9 11 3 3L22 4" />
+                                </svg> Defensa disciplinaria</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                    <path d="m9 11 3 3L22 4" />
+                                </svg> Contencioso administrativo</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                    <path d="m9 11 3 3L22 4" />
+                                </svg> Atención de requerimientos</li>
+                        </ul>
+                    </div>
+                    <div class="service-card reveal delay-2">
+                        <h4>Asesoría Legal Bomberil</h4>
+                        <p>Asesorías especializadas para garantizar la conformidad operativa de Cuerpos de Bomberos.</p>
+                        <ul class="check-list">
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                    <path d="m9 11 3 3L22 4" />
+                                </svg> Revisión de estatutos</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                    <path d="m9 11 3 3L22 4" />
+                                </svg> Control de cumplimiento</li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                    <path d="m9 11 3 3L22 4" />
+                                </svg> Diagnóstico institucional</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. MODALIDAD DEL SERVICIO -->
+    <section class="section bg-primary text-white">
+        <div class="container">
+            <div class="grid grid-2 gap-8">
+                <div class="modalidad-card reveal delay-1">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="badge-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M5 12h14" />
+                                <path d="m12 5 7 7-7 7" />
+                            </svg>
+                        </div>
+                        <h4 class="modalidad-title">Servicio Integral</h4>
+                    </div>
+                    <p>
+                        Gestión completa desde el diagnóstico inicial hasta la entrega final y seguimiento, asumiendo la
+                        responsabilidad total de su proyecto documental o jurídico.
+                    </p>
+                </div>
+
+                <div class="modalidad-card reveal delay-2">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="badge-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M20 19.5v.5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8.5L20 7.5V11" />
+                                <polyline points="14 2 14 8 20 8" />
+                                <path d="M18 13.5V18" />
+                                <path d="m15.5 15.5 5 5" />
+                            </svg>
+                        </div>
+                        <h4 class="modalidad-title">Por Módulos Específicos</h4>
+                    </div>
+                    <p>
+                        Contratación focalizada en necesidades particulares de su institución, permitiendo abordar áreas
+                        críticas con precisión quirúrgica y presupuesto optimizado.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. BENEFICIOS -->
+    <section class="section bg-white">
+        <div class="container">
+            <div class="text-center mb-16 reveal">
+                <span class="section-tag">Valor Agregado</span>
+                <h2 class="section-title">Beneficios para su Institución</h2>
+            </div>
+            <div class="grid grid-3 gap-6">
+                <div class="benefit-card reveal delay-1"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                        <path d="m9 11 3 3L22 4" />
+                    </svg><span>Cumplimiento normativo estricto</span></div>
+                <div class="benefit-card reveal delay-2"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                        <path d="m9 11 3 3L22 4" />
+                    </svg><span>Acceso rápido y estructurado a la información</span></div>
+                <div class="benefit-card reveal delay-3"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                        <path d="m9 11 3 3L22 4" />
+                    </svg><span>Optimización de espacios del archivo físico</span></div>
+                <div class="benefit-card reveal delay-1"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                        <path d="m9 11 3 3L22 4" />
+                    </svg><span>Mejora sustancial de procesos administrativos</span></div>
+                <div class="benefit-card reveal delay-2"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                        <path d="m9 11 3 3L22 4" />
+                    </svg><span>Soporte documental para auditorías</span></div>
+                <div class="benefit-card reveal delay-3"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                        <path d="m9 11 3 3L22 4" />
+                    </svg><span>Seguridad y confidencialidad garantizada</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. CÓMO TRABAJAMOS -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="text-center mb-20 reveal">
+                <span class="section-tag">Proceso</span>
+                <h2 class="section-title">Cómo Trabajamos</h2>
+            </div>
+
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+                <div class="grid grid-4 gap-12">
+                    <div class="timeline-step reveal delay-1">
+                        <div class="step-badge">1</div>
+                        <h4>Diagnóstico Inicial</h4>
+                        <p>Evaluación profunda del estado actual documental o jurídico de la entidad.</p>
+                    </div>
+                    <div class="timeline-step reveal delay-2">
+                        <div class="step-badge">2</div>
+                        <h4>Plan de Trabajo</h4>
+                        <p>Diseño de un plan de acción personalizado, cronograma y metas claras.</p>
+                    </div>
+                    <div class="timeline-step reveal delay-3">
+                        <div class="step-badge">3</div>
+                        <h4>Ejecución Controlada</h4>
+                        <p>Implementación rigurosa con reportes periódicos de avance y control de calidad.</p>
+                    </div>
+                    <div class="timeline-step reveal delay-4">
+                        <div class="step-badge">4</div>
+                        <h4>Entrega y Seguimiento</h4>
+                        <p>Entrega formal de resultados y acompañamiento posterior para garantizar la sostenibilidad.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. NUESTRO COMPROMISO -->
+    <section class="section-compromiso">
+        <div class="compromiso-container">
+
+            <!-- Escudo animado -->
+            <div class="shield-pulse reveal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                        d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+                </svg>
+            </div>
+
+            <!-- Título visible en blanco -->
+            <h2 class="compromiso-title reveal delay-1">Nuestro Compromiso</h2>
+
+            <!-- Cuadrícula 2 columnas -->
+            <div class="compromiso-grid">
+                <div class="compromiso-item reveal delay-1">
+                    <svg class="check-gold" xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                        <path d="m9 11 3 3L22 4" />
+                    </svg>
+                    <p>Manejo estrictamente ético y absoluta confidencialidad de la información institucional.</p>
+                </div>
+
+                <div class="compromiso-item reveal delay-2">
+                    <svg class="check-gold" xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                        <path d="m9 11 3 3L22 4" />
+                    </svg>
+                    <p>Trabajo caracterizado por la máxima responsabilidad, rigor y profesionalismo.</p>
+                </div>
+
+                <div class="compromiso-item reveal delay-1">
+                    <svg class="check-gold" xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                        <path d="m9 11 3 3L22 4" />
+                    </svg>
+                    <p>Atención directa, personalizada y cercana a las realidades de cada entidad.</p>
+                </div>
+
+                <div class="compromiso-item reveal delay-2">
+                    <svg class="check-gold" xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                        <path d="m9 11 3 3L22 4" />
+                    </svg>
+                    <p>Cumplimiento inquebrantable de los tiempos y alcances acordados contractualmente.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 10. A QUIÉN ACOMPAÑAMOS -->
+    <section class="section bg-white">
+        <div class="container">
+            <div class="text-center mb-16 reveal">
+                <span class="section-tag">Clientes</span>
+                <h2 class="section-title">A Quién Acompañamos</h2>
+            </div>
+
+            <div class="grid grid-4 gap-6">
+                <div class="client-card reveal delay-1">
+                    <img src="assets/images/bomberos.png" alt="Bomberos" class="client-img">
+                    <div class="client-overlay">
+                        <h4>Cuerpos de Bomberos Voluntarios</h4>
+                    </div>
+                </div>
+                <div class="client-card reveal delay-2">
+                    <img src="assets/images/about-img.png" alt="Alcaldías" class="client-img">
+                    <div class="client-overlay">
+                        <h4>Alcaldías y Entidades Municipales</h4>
+                    </div>
+                </div>
+                <div class="client-card reveal delay-3">
+                    <img src="https://images.pexels.com/photos/3280130/pexels-photo-3280130.jpeg?auto=compress&cs=tinysrgb&w=800"
+                        alt="SNGRD" class="client-img">
+                    <div class="client-overlay">
+                        <h4>Entidades del SNGRD</h4>
+                    </div>
+                </div>
+                <div class="client-card reveal delay-4">
+                    <img src="https://images.pexels.com/photos/373912/pexels-photo-373912.jpeg?auto=compress&cs=tinysrgb&w=800"
+                        alt="Públicas y Privadas" class="client-img">
+                    <div class="client-overlay">
+                        <h4>Entidades Públicas y Privadas</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. BANNER CTA -->
+    <section class="section-cta">
+        <div class="container-narrow text-center reveal">
+            <h2 class="cta-title">¿Listo para dar el primer paso?</h2>
+            <p class="cta-subtitle">
+                Inicie el camino hacia la profesionalización jurídica y el fortalecimiento institucional integral.
+            </p>
+            <a href="#contacto" class="btn-dark">Contáctenos hoy</a>
+        </div>
+    </section>
+
+    <!-- 12. CONTACTO -->
+    <section id="contacto" class="section bg-white">
+        <div class="container">
+            <div class="text-center mb-16 reveal">
+                <span class="section-tag">Contacto</span>
+                <h2 class="section-title">Hablemos de su Institución</h2>
+            </div>
+
+            <div class="grid grid-2 gap-16">
+                <!-- Info Card -->
+                <div class="contact-info-card reveal delay-1">
+                    <h3 class="info-title">Información de Contacto</h3>
+                    <div class="info-list">
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="info-label">Teléfonos</span>
+                                <p>311 285 4346</p>
+                                <p>311 217 7006</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <rect width="20" height="16" x="2" y="4" rx="2" />
+                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="info-label">Correo Electrónico</span>
+                                <p>gmgestionlegalco@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulario WhatsApp -->
+                <div class="contact-form-wrapper">
+                    <form id="form-whatsapp" class="form-grid reveal delay-2" onsubmit="return enviarAWhatsApp(event)">
+                        <div class="form-row-2">
+                            <div class="form-group">
+                                <label for="nombre">Nombre completo</label>
+                                <input type="text" id="nombre" name="nombre" required placeholder="Su nombre">
+                            </div>
+                            <div class="form-group">
+                                <label for="entidad">Entidad / Institución</label>
+                                <input type="text" id="entidad" name="entidad" required
+                                    placeholder="Nombre de la entidad">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="4" required
+                                placeholder="Cuéntenos brevemente cómo podemos ayudarle"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit">
+                            Contactar por WhatsApp
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 13. FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="grid grid-3 gap-12 mb-12">
+                <div class="reveal delay-1">
+                    <div class="flex items-center gap-3 mb-6">
+                        <img src="https://res.cloudinary.com/djccaiypy/image/upload/v1781148698/LOGO_SIN_FONDO_dz0qrh.png"
+                            alt="G&M Logo" class="footer-logo">
+                        <span class="brand-title text-white">G&M Gestión Legal</span>
+                    </div>
+                    <p class="text-muted">
+                        Asesoría jurídica y gestión documental especializada para el fortalecimiento de
+                        entidades
+                        públicas y cuerpos de bomberos en Colombia.
+                    </p>
+                </div>
+
+                <div class="reveal delay-2">
+                    <h4 class="footer-heading">Enlaces Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#servicios">Nuestros Servicios</a></li>
+                        <li><a href="#nosotros">Quiénes Somos</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="reveal delay-3">
+                    <h4 class="footer-heading">Contacto</h4>
+                    <ul class="footer-contact-list">
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg>
+                            <span>311 285 4346<br>311 217 7006</span>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect width="20" height="16" x="2" y="4" rx="2" />
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                            </svg>
+                            <span>gmgestionlegalco@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 G&M Gestión Legal S.A.S. Todos los derechos reservados.</p>
+                <p>Diseño Institucional Especializado</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón Flotante WhatsApp -->
+    <a href="https://wa.me/573112854346?text=Hola,%20me%20gustaría%20solicitar%20una%20asesoría%20jurídica."
+        target="_blank" rel="noopener noreferrer" class="whatsapp-floating" aria-label="Chat en WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+        </svg>
+    </a>
+
+
+</body>
+
+</html>
